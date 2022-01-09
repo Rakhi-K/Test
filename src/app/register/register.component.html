@@ -1,0 +1,36 @@
+<div class="container w-25">
+
+    <form [formGroup]="registerForm" (ngSubmit)="register()" action="" class=" mt-5 p-3 mb-3">
+        <h1>Welcome</h1>
+        <br><br>
+        <div class="p-3 mb-3">
+            <label for="name">First Name</label>
+            <input type="text" formControlName="name" id="name" placeholder="First Name" class="form-control">
+            <br>
+            <div *ngIf="(this.registerForm.get('name')?.touched || this.registerForm.get('name')?.dirty) && this.registerForm.get('name')?.errors"
+                id="error">Invalid Name</div>
+        </div>
+
+        <div class="p-3 mb-3">
+            <label for="email">Email Id</label>
+            <input type="email" formControlName="email" id="email" placeholder="Email Id" class="form-control">
+            <br>
+            <div *ngIf="(this.registerForm.get('email')?.touched || this.registerForm.get('email')?.dirty) && this.registerForm.get('email')?.errors"
+                id="error">Invalid Email Id</div>
+        </div>
+
+        <div class="p-3 mb-3">
+            <label for="phn">Phone number</label>
+            <input type="tel" formControlName="phone" id="phone" placeholder="Phone Number" class="form-control">
+            <br>
+            <div *ngIf="(this.registerForm.get('phone')?.touched || this.registerForm.get('phone')?.dirty) && this.registerForm.get('phone')?.errors"
+                id="error">Invalid Phone Number</div>
+        </div>
+
+        <div class="p-3 mb-3 text-center">
+            <button class="button" type="submit">Register</button>
+        </div>
+
+    </form>
+
+</div>

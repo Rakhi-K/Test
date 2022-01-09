@@ -1,0 +1,15 @@
+<!-- ***Displaying the user details with SORTING and PAGINATION -->
+
+<div class="">
+    <ag-grid-angular 
+    class="ag-theme-alpine"   
+    [columnDefs]="columnDefs"
+    [animateRows]="true"
+    [pagination]="true"
+    [paginationPageSize]="9"
+   
+    (gridReady)="onGridReady($event)"
+    ></ag-grid-angular>
+</div>
+
+

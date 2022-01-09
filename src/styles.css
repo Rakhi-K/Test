@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@ag-grid-community/all-modules/dist/styles/ag-grid.css";   
+@import "../node_modules/@ag-grid-community/all-modules/dist/styles/ag-theme-alpine.css"; 
+@import "../node_modules/@ag-grid-community/all-modules/dist/styles/ag-theme-alpine-dark.min.css";
+
+body{
+    background-image: url("http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg");  
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+div{
+    font-family: 'Hahmlet', serif;
+}
+h1{
+    text-align: center;
+}
+label{
+    text-align: center
+}
+form{
+    color: #00FF7F;  
+}
+
+.button{
+    padding: 9px 15px;
+    font-size: px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }

@@ -1,0 +1,27 @@
+div{
+    color: white;
+    width: 100%;
+    height: max-content;
+   
+}
+
+.ag-theme-alpine{ 
+   --ag-foreground-color: black ;
+
+}
+
+
+ag-grid-angular {
+    width:1700px;
+    height:500px;
+    margin: auto;
+   font-size: larger ; 
+   -webkit-scrollba:display
+   
+}
+
+::ng-deep .ag-theme-alpine .ag-header {
+    background-color: crimson;
+    font-style:italic ;
+}
+
